@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Resume</title>
     <link rel="stylesheet" href="./css/resume.css">
+    <script src="//at.alicdn.com/t/font_683145_66sovogyrbyphkt9.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
 <div class="topbar-container">
@@ -22,31 +32,54 @@
         </nav>
     </div>
 </div>
-<div class="banner"></div>
-<main class="about">
-    <div class="aboutme">
-        <div class="picture"><img src="" alt=""></div>
-        <div class="text">
-            <h1>郑XX</h1>
-            <small>前端开发工程师</small>
-            <dl>
-                <dt>年龄</dt>
-                <dd>xx</dd>
-                <dt>所在城市</dt>
-                <dd>深圳</dd>
-                <dt>邮箱</dt>
-                <dd>poly2014w@163.com</dd>
-                <dt>手机</dt>
-                <dd>17xxxxxxxxx</dd>
-            </dl>
+<div class="banner">
+    <div class="mask"></div>
+</div>
+<main>
+    <div class="about">
+        <div class="about-me clearfix">
+            <div class="avatar"><img src="./img/avatar.jpg" alt="avatar"></div>
+            <div class="text">
+                <div class="hello"><span>Hello</span>
+                    <div class="triangle"></div>
+                </div>
+                <h1>郑XX</h1>
+                <small>前端开发工程师</small>
+                <hr>
+                <dl class="clearfix">
+                    <dt>年龄</dt>
+                    <dd>xx</dd>
+                    <dt>所在城市</dt>
+                    <dd>深圳</dd>
+                    <dt>邮箱</dt>
+                    <dd>poly2014w@163.com</dd>
+                    <dt>手机</dt>
+                    <dd>17xxxxxxxxx</dd>
+                </dl>
+            </div>
         </div>
-    </div>
-    <div class="media">
-        <ul>
-            <li><a href="#"><img src="#" alt=""></a></li>
-            <li><a href="#"><img src="#" alt=""></a></li>
-            <li><a href="#"><img src="#" alt=""></a></li>
-        </ul>
+        <div class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            </a>
+        </div>
     </div>
     <a href="#">下载PDF简历</a>
     <p>个人简介XXXXXXXXXX
@@ -54,6 +87,7 @@
         技能：XXXXXXXXX
     </p>
 </main>
+
 <section>
     <h2>技能</h2>
     <ol>
