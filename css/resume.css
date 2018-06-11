@@ -5,6 +5,7 @@
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 ol,ul {
     list-style: none;
@@ -78,6 +79,8 @@ body {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.1);
+    margin-top: -300px;
 }
 .about .about-me {
     padding: 55px 50px 40px;
@@ -150,4 +153,161 @@ body {
     height: 30px;
     fill: #ffffff;
     vertical-align: top;
+}
+
+.about-wrapper .download-resume {
+    text-align: center;
+}
+.about-wrapper .download-resume>a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 21px 55px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #cbcdcf;
+    letter-spacing: 0.1em;
+    margin: 40px 0;
+    border-radius: 2px;
+    transition: box-shadow 0.2s;
+}
+.about-wrapper .download-resume>a:hover {
+    box-shadow: 0px 4px 10px 2px rgba(0,0,0,0.2);
+}
+.about-wrapper .self-introduction {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "kai";
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*skill*/
+.skill,
+.portfolio {
+    max-width: 940px;
+    margin: 80px auto;
+}
+.skill>h2,
+.portfolio>h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.skill>ol {
+    background: #ffffff;
+    box-shadow:  0px 1px 3px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 40px 50px;
+
+}
+.skill>ol h3 {
+    font-weight: normal;
+    font-size: 14px;
+}
+.skill>ol li {
+    width: 48%;
+
+}
+.skill>ol .progress-bar {
+    margin-bottom: 40px;
+    margin-top: 4px;
+}
+.skill>ol li:nth-child(2n+1) {
+    float: left;
+}
+.skill>ol li:nth-child(2n) {
+    float: right;
+}
+.skill>ol .progress-bar {
+    background: #fae1e1;
+    height: 5px;
+}
+.skill>ol .progress-bar .progress {
+    background: #e6686a;
+    height: 100%;
+}
+.skill>ol li:nth-child(1) .progress{
+    width: 80%;
+}
+.skill>ol li:nth-child(2) .progress {
+    width: 75%;
+}
+.skill>ol li:nth-child(3) .progress {
+    width: 75%;
+}
+.skill>ol li:nth-child(4) .progress {
+    width: 85%;
+}
+.skill>ol li:nth-child(5) .progress {
+    width: 90%;
+}
+.skill>ol li:nth-child(6) .progress {
+    width: 60%;
+}
+.skill>ol li:nth-child(5) .progress-bar,
+.skill>ol li:nth-child(6) .progress-bar {
+    margin-bottom: 8px;
+}
+/*portfolio*/
+.portfolio {
+    text-align: center;
+}
+.portfolio>nav {
+    display: inline-block;
+    vertical-align: top;
+}
+.portfolio>nav>ol {
+    display: inline-block;
+    vertical-align: top;
+}
+.portfolio>nav>ol>li {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+.portfolio>nav>ol>li:not(:first-child) {
+    margin-left: 20px;
+}
+.portfolio .bar {
+    background: #ffffff;
+    border-radius: 2px;
+    height: 5px;
+    margin-top: 5px;
+}
+.portfolio .bar >.bar-inner {
+    height: 100%;
+    background: #e6686a;
+    transition: all 0.3s;
+}
+.portfolio .bar.state-1 .bar-inner {
+    margin-left: 0;
+    width: 57px;
+}
+.portfolio .bar.state-2 .bar-inner {
+    margin-left: 57px;
+    width: 57px;
+}
+.portfolio .bar.state-3 .bar-inner {
+    margin-left: 114px;
+    width: 96px;
+}
+.portfolio .works {
+    margin-top: 30px;
+    position: relative;
+}
+.portfolio .works .works1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.portfolio .works .works2 {
+    position: absolute;
+    top: 0;
+    left: 645px;
+}
+.portfolio .works .works3 {
+    position: absolute;
+    top: 312px;
+    left: 645px;
 }
